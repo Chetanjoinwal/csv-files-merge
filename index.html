@@ -1,0 +1,339 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="lib/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <!-- <link rel="stylesheet" href="css/style1.css"> -->
+    <link rel="stylesheet" href="font/css/all.css">
+    <!-- favicon -->
+    <link rel="shortcut icon" href="images/favicon-32x32.png" type="image/x-icon">
+    <title>Csv files megge easily</title>
+</head>
+
+<body>
+    <!-- header  -->
+
+
+    <header>
+        <div class=" collapse  nav-top  " id="navbarHeader" >
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col py-2-sm-8 col py-2-md-7 py-4">
+                        <h4 class="text-white"><a href="about.html"> About</a></h4>
+                        <p class="text-muted">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolorem nesciunt
+                            iure quod accusamus recusandae, suscipit quaerat cumque voluptates consequuntur! Unde, esse
+                            alias necessitatibus obcaecati excepturi odit aut hic, maiores ad autem ullam quasi in
+                            delectus id magnam dolores eveniet ipsa explicabo dolorum veritatis! Eveniet qui corrupti
+                            amet itaque adipisci nulla repudiandae, quas molestiae minima ipsum quisquam quis quae nobis
+                            ratione animi. Minus rem quod numquam fugiat consequatur illum consequuntur ipsum unde eos
+                            magnam dicta, ab quasi sint veniam odit molestiae labore natus eaque provident tempore iste.
+                            Ea beatae nulla sapiente, sunt, dolor et voluptatum ratione quam tenetur, perferendis vel
+                            nisi nihil deserunt labore iure. Ea itaque sequi, consectetur tenetur facere nulla quis
+                            dolorum voluptatum quia aut, nisi fugiat repellat? Ducimus eum delectus doloribus dicta
+                            minus placeat, vitae aperiam perspiciatis praesentium asperiores nobis, maxime consectetur
+                            et quis sint! Pariatur, autem eligendi ipsa eum odio ab blanditiis aperiam provident neque
+                            repudiandae rem commodi earum rerum harum magni quisquam, eaque sapiente in ipsam aliquid
+                            voluptatem aspernatur molestiae possimus minima. Suscipit laudantium esse blanditiis
+                            consequuntur saepe exercitationem quibusdam ipsam repudiandae mollitia quas odit expedita,
+                            quam recusandae dicta illo voluptatibus accusantium quo, natus repellendus deserunt? Numquam
+                            ea libero reiciendis a iste eligendi similique error vitae.</p>
+                    </div>
+                    <div class="col py-2-sm-4 offset-md-1 py-4">
+                        <h4 class="text-white">Contact</h4>
+                        <ul class="list-unstyled">
+                            <li><a href="#" class="text-white"> <i class="fab fa-twitter fa-2x"></i> Follow on
+                                    Twitter</a></li>
+                            <li><a href="#" class="text-white"> <i class="fab fa-facebook fa-2x"></i> Like on
+                                    Facebook</a></li>
+                            <li><a href="#" class="text-white"> <i class="fa fa-envelope fa-2x"></i> Email me</a></li>
+                            <li><a href="#" class="text-white"> <i class="fab fa-instagram fa-2x"></i> instagram</a>
+                            </li>
+                            <!-- <li>
+                            <a href="#" class="text-white" type="button" id="theme"> <i class="fa-solid fa-moon   fa-2x"></i> theme</a>
+                            </li> -->
+                        </ul>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+        <div class="navbar nav-topper  shadow-sm" >
+            <div class="container-fluid">
+                <a href="#" class="navbar-brand d-flex align-items-center">
+                    <img src="images/logo.jpg" alt="logo" class="logo">
+                </a>
+                <button class="navbar-toggler collapsed bumer" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarHeader" aria-controls="navbarHeader" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="fa-solid fa-bars"></span>
+                </button>
+               
+            </div>
+        </div>
+    </header>
+
+ 
+
+ <div class="container1">
+    <div class="head">
+    <h1 class="heading">CSV Files Merge in three steps</h1>
+    </div>
+    <div class="file-container">
+        
+    <div class="drop-area" ondragover="allowDrop(event)" ondrop="drop(event)">
+      <p >Drag and drop CSV files here</p>
+      <input type="file" id="fileInput" multiple onchange="handleFiles(this.files)">
+      <label for="fileInput" class="file-label" >Click / Drag Files</label>
+    </div>
+
+</div>
+     <!-- adjustment  -->
+    <div class="adjustment-container">
+        <h2>File Adjustment</h2>
+    <ul id="adjustmentList" class="adjustment-list" ondrop="dropOnAdjustment(event)" ondragover="allowDrop(event)"></ul>
+    <button onclick="mergeCSVFiles()" class="btn btn-primary  rounded-pill"  > Click to Merge Files</button>
+    <div class="download-container">
+        <a id="downloadButton" class="btn btn-success rounded-pill" download="merged.csv">Download</a>
+    </div>
+</div>
+ </div> 
+    
+        <div class="container">
+            <div class="row">
+                <div class="row cols-1 p-5">
+                    <h3 class="text-center">Merge multiple CSV files in just three simple steps</h3>
+                </div>
+            </div>
+            <div class="row row-cols-lg-3  row-cols-md-12  row-cols-sm-12 g-4">
+                <div class="col-12 py-2 my-4">
+                  <div class="card h-10" >
+                    <img src="images/step1.png" class="card-img-top imagecardd "  alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title text-center">First step</h5>
+                      <p class="card-text steps-text">Click Select CSV-files or pull your files onto the Drag & Drop field to begin with the merging.
+                        The CSV files are now getting prepared for the combining.. Once every file is uploaded you can proceed with step </p>
+                    </div>
+                   
+                  </div>
+                </div>
+                <div class="col-12 py-2 my-4">
+                  <div class="card h-10">
+                    <img src="images/step2.png" class="card-img-top imagecardd " alt="step2">
+                    <div class="card-body">
+                      <h5 class="card-title text-center">Second step</h5>
+                      <p class="card-text steps-text">You are now able to change the order how the CSV files will be added to the new merged CSV. Therefore you can pull the files at the arrows to reorder.
+                        Additionally, you can choose if you want to have the header - also known as the index - removed at files other than file one. In most cases you only want the header in file one.</p>
+                    </div>
+                  
+                  </div>
+                </div>
+                <div class="col-12 py-2 my-4">
+                  <div class="card h-10">
+                    <img src="images/step3.png" class="card-img-top imagecardd " alt="">
+                    <div class="card-body">
+                      <h5 class="card-title  text-center">Third Step</h5>
+                      <p class="card-text steps-text">Thats it! Now you can merge the CSV file by clicking "Click to merge". Then you can "download" your file and import it into Excel or o ther software.</p>
+                    </div>
+                 
+                  </div>
+                </div>
+              </div>
+        </div>
+
+
+    
+    <!-- header  -->
+
+
+    <!-- footer  -->
+
+    <div class="container-fluid footer py-5">
+
+      <div class="row row-cols-1">
+          <div class="row row-cols-1">
+              <p class="fw-bolder text-center"><a href="#" class="btn btn-md mx-2 btn-outline-primary rounded">Subscribe</a>  to our merge-cvs </p>
+              <div class="container text-center fst-italic"><b>free</b> e-tools * <b>free</b> CVS merge
+                  tools</div>
+          </div>
+          <div class="row row-cols-1">
+              <p class="text-center">© 2023 merge-csv-easy.com - All rights reserved.</p>
+          </div>
+      </div>
+
+
+
+      <!-- footer end  -->
+
+      <div class="container-fluid text-center">
+          <div class="row row-cols-lg-3 row-cols-md-3 row-cols-sm-3 ">
+              <div class="col py-2 ">
+                  <p class="text-center fw-bold foota"><a href="about.html">about</a></p>
+                  <li class="fw-1 ">E-tools Trends 2020</li>
+                  <li class="fw-1">formate tools treds 2019</li>
+
+              </div>
+              <div class="col py-2">
+                  <p class="text-center fw-bold foota"><a href="contact-us.html">contact-us</a></p>
+                  <li class="fw-1"></li>
+                  <li class="fw-1">cvs tools treds 2023</li>
+              </div>
+              <div class="col py-2">
+                  <p class="text-center fw-bold foota"><a href="policy.html">privacy-policy</a></p>
+                  <li class="fw-1">merge easy cvs Trends 2023</li>
+                  <li class="fw-1">cvs tools treds 2019</li>
+
+              </div>
+          </div>
+      </div>
+  </div>
+      
+        <!-- <script src="script.js"></script> -->
+        <script>let adjustmentCount = 0;
+            let hasHeader = false;
+        
+            function allowDrop(event) {
+              event.preventDefault();
+            }
+        
+            function drop(event) {
+              event.preventDefault();
+              const files = event.dataTransfer.files;
+              handleFiles(files);
+            }
+        
+            function handleFiles(files) {
+              for (let i = 0; i < files.length; i++) {
+                const file = files[i];
+                const reader = new FileReader();
+        
+                reader.onload = function (e) {
+                  const fileContent = e.target.result;
+                  addAdjustment(file.name, fileContent);
+                };
+        
+                reader.readAsText(file);
+              }
+            }
+        
+            function addAdjustment(filename, content) {
+              const adjustmentList = document.getElementById('adjustmentList');
+        
+              const li = document.createElement('li');
+              li.setAttribute('draggable', 'true');
+              li.setAttribute('ondragstart', 'drag(event)');
+              li.id = `adjustment${adjustmentCount}`;
+              adjustmentCount++;
+        
+              const fileNameSpan = document.createElement('span');
+              fileNameSpan.innerText = filename;
+              li.appendChild(fileNameSpan);
+        
+              const cancelButton = document.createElement('a');
+              cancelButton.href = '#';
+              cancelButton.innerText = 'Cancel';
+              cancelButton.className = 'cancel-button';
+              cancelButton.onclick = function () {
+                adjustmentList.removeChild(li);
+              };
+              li.appendChild(cancelButton);
+        
+              const hiddenInput = document.createElement('input');
+              hiddenInput.type = 'hidden';
+              hiddenInput.name = `adjustment${adjustmentCount}`;
+              hiddenInput.value = content;
+              li.appendChild(hiddenInput);
+        
+              adjustmentList.appendChild(li);
+            }
+        
+            function drag(event) {
+              event.dataTransfer.setData('text', event.target.id);
+            }
+        
+            function dropOnAdjustment(event) {
+              event.preventDefault();
+              const data = event.dataTransfer.getData('text');
+              const draggedElement = document.getElementById(data);
+              const adjustmentList = document.getElementById('adjustmentList');
+        
+              const targetIndex = Array.from(adjustmentList.children).indexOf(event.target);
+              const currentIndex = Array.from(adjustmentList.children).indexOf(draggedElement);
+        
+              if (currentIndex < targetIndex) {
+                event.target.parentNode.insertBefore(draggedElement, event.target.nextSibling);
+              } else {
+                event.target.parentNode.insertBefore(draggedElement, event.target);
+              }
+            }
+        
+            function mergeCSVFiles() {
+              const adjustmentList = document.getElementById('adjustmentList');
+              const adjustedFiles = adjustmentList.getElementsByTagName('li');
+              const mergedData = [];
+        
+              if (!hasHeader) {
+                const headers = [];
+                for (let i = 0; i < adjustedFiles.length; i++) {
+                  const hiddenInput = adjustedFiles[i].getElementsByTagName('input')[0];
+                  const rows = hiddenInput.value.trim().split('\n');
+                  if (rows.length > 0) {
+                    const header = rows[0];
+                    headers.push(header);
+                  }
+                }
+                mergedData.push(headers.join(','));
+                hasHeader = true;
+              }
+        
+              for (let i = 0; i < adjustedFiles.length; i++) {
+                const hiddenInput = adjustedFiles[i].getElementsByTagName('input')[0];
+                const rows = hiddenInput.value.trim().split('\n');
+                if (rows.length > 1) {
+                  mergedData.push(rows.slice(1).join('\n'));
+                }
+              }
+        
+              const csvContent = mergedData.join('\n');
+              const encodedUri = encodeURI('data:text/csv;charset=utf-8,' + csvContent);
+              const downloadButton = document.getElementById('downloadButton');
+              downloadButton.setAttribute('href', encodedUri);
+              downloadButton.style.display = 'inline-block';
+            }
+        
+            // Additional Professional Functionality
+        
+            function clearAdjustments() {
+              const adjustmentList = document.getElementById('adjustmentList');
+              adjustmentList.innerHTML = '';
+              adjustmentCount = 0;
+              hasHeader = false;
+            }
+        
+            function toggleHeader() {
+              hasHeader = !hasHeader;
+              const toggleHeaderButton = document.getElementById('toggleHeaderButton');
+              toggleHeaderButton.innerText = hasHeader ? 'Disable Header' : 'Enable Header';
+            }
+        
+            function removeAllFiles() {
+              const adjustmentList = document.getElementById('adjustmentList');
+              adjustmentList.innerHTML = '';
+              hasHeader = false;
+            }
+          </script>
+
+    <!-- java script files -->
+    <script src="lib/js/bootstrap.bundle.min.js"></script>
+    <!-- <script src="js/custom.js"></script> -->
+    
+
+
+</body>
+
+</html>

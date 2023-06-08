@@ -1,0 +1,323 @@
+/* google font  */
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif:wght@400;500&family=Oswald:wght@300;600&display=swap');
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Noto Serif', serif;
+
+}
+
+p {
+  font-family: 'Oswald', sans-serif;
+  line-height: 20px;
+  font-weight: 25px;
+  font-size: 16px;
+}
+
+#dropfile {
+  font-family: 'Oswald', sans-serif;
+
+  /* font-weight: 40px; */
+  font-size: 40px;
+  color: white;
+}
+
+
+.logo {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+}
+
+.nav-topper {
+  background-color: rgb(32, 31, 41);
+}
+
+.nav-top {
+  background-color: rgb(48, 40, 40);
+}
+
+.bumer {
+  color: rgb(0, 0, 255);
+  background-color: rgb(22, 21, 21);
+}
+
+.bumer:hover {
+
+  color: rgb(0, 216, 245);
+  /* background-color: blue; */
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+.foota a {
+  text-decoration: none;
+
+  color: rgba(255, 255, 255, 0.849);
+}
+
+.footer {
+  background-color: black;
+  color: white;
+}
+
+
+/* this is tool css  */
+
+
+/* end tool css  */
+
+/* tool  */
+
+/* .container {
+    width: 100%;
+    /* margin: 0 auto;
+    /* padding: 20px;
+  } */
+
+/* text  */
+.heading {
+  font-size: 25px;
+  color: white;
+  line-height: 10px;
+  padding: 20px 0px 0px 30px;
+}
+
+#dragdrop {
+  font-family: 'Oswald', sans-serif;
+  font-size: 30px;
+  color: #ebe5e5;
+}
+
+
+
+.container1 {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 100px 0;
+
+}
+
+.head {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.file-container {
+  background-image: linear-gradient(rgba(0, 26, 255, 0.5), rgba(36, 255, 7, 0.363));
+  border: 3px dashed #ffffff;
+  border-radius: 10px;
+  padding: 30px;
+  text-align: center;
+  margin: auto;
+
+}
+
+.drop-zone {
+  min-height: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+
+}
+
+.drop-zone p {
+  font-size: 18px;
+  color: #ffffff;
+  font-weight: 20px;
+}
+
+.adjustment-container {
+  margin-top: 20px;
+  padding-left: 20px;
+}
+
+.adjustment-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.adjustment-list li {
+  background-color: #f5f5f5;
+  border: 1px solid #dfd1d1;
+  padding: 5px;
+  margin-bottom: 10px;
+  cursor: move;
+}
+
+.download-container {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.download-button {
+  display: inline-block;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: #264cc7;
+  border: 1px solid black;
+  color: white;
+  font-size: 16px;
+  text-decoration: none;
+  cursor: pointer;
+  transition: background-color 0.5s ease;
+}
+
+.download-button:hover {
+  border: 2px solid black;
+  background-color: hsl(123, 80%, 43%);
+  color: black;
+}
+
+.download-button:active {
+  background-color: #49b129;
+}
+
+.cancel-button {
+  margin-left: 10px;
+  padding: 5px 10px;
+  background-color: #f51101ec;
+  color: rgb(255, 255, 255);
+  font-size: 12px;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+.cancel-button:hover {
+  background-color: #f5010131;
+  color: rgb(0, 0, 0);
+  border: 2px solid red;
+
+}
+
+/* main background image */
+
+/* section{
+    background-image:linear-gradient(rgb(0,0,0,0.3),rgb(0,0,0,0.3)), url("https://source.unsplash.com//1200x600/?,weather");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+  } */
+
+.imagecardd {
+  width: 70px !important;
+  /* height: 40px; */
+}
+.steps-text {
+  color: rgb(0, 0, 0) !important ;
+}
+
+ 
+#fileInput{
+  display: none;
+  padding: auto;
+}
+.file-label{
+  color: blanchedalmond;
+  font-size: 26px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+@media screen and (min-width: 300px) and (max-width: 400px) {
+  .logo {
+    width: 50px;
+    height: 50px;
+  }
+
+  #dropfile {
+    font-size: 30px;
+  }
+
+  #dragdrop {
+    font-size: 20px;
+  }
+
+  /* #main {margin-left: 216px;} */
+}
+
+@media only screen and (max-width: 600px) and (min-width: 300px) {
+  .logo {
+    width: 70px;
+    height: 70px;
+  }
+
+}
+
+@media only screen and (max-width: 800px) and (min-width: 300px) {
+
+  body{
+    background-image: linear-gradient(rgb(0, 0, 0, 0.3), rgb(0, 0, 0, 0.3)), url("../images/office.jpg");
+    background-position: center;
+    /* background-repeat: no-repeat; */
+    background-size: cover;
+    /* height: 100vh; */
+    /* width: 100%; */
+    /* background-color: rgba(119, 85, 85, 0.459); color: white; */
+  }
+
+  p {
+    color: rgb(253, 253, 253);
+  }
+  .steps-text {
+    color: rgb(0, 0, 0) !important ;
+  }
+  
+
+}
+
+@media only screen and (max-width: 2200px) and (min-width: 800px) {
+
+  body {
+    background-image: linear-gradient(rgba(17, 0, 250, 0.205), rgba(255, 3, 213, 0.205)), url("../images/mac.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* background-color: rgba(104, 72, 72, 0.301); */
+  }
+  p {
+    color: rgb(245, 240, 240);
+    
+  }
+
+}
+
+@media only screen and (max-width: 400px) and (min-width: 300px) {
+  .file-container {
+
+    background-image: linear-gradient(rgba(255, 30, 0, 0.5), rgba(7, 52, 255, 0.363));
+    border: 1px dashed #ffffff;
+    border-radius: 10px;
+    padding: 30px;
+    text-align: center;
+    width: 80%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 35px;
+  }
+}
+
+@media only screen and (max-width: 800px) and (min-width: 400px) {
+  .file-container {
+    margin: 40px;
+    background-image: linear-gradient(rgba(255, 30, 0, 0.5), rgba(7, 52, 255, 0.363));
+  }
+}
